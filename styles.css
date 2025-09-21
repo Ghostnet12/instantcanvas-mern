@@ -200,6 +200,13 @@ a{color:inherit;text-decoration:none}
   border:1px solid transparent; background:transparent; color:#d9e6ff;
 }
 .segmented input{ appearance:none; inline-size:0; block-size:0; margin:0; }
+
+/* Fallback: highlight selected project type when JavaScript adds .active */
+.segmented label.active {
+  background: #11182a;
+  border-color: #2a3550;
+}
+
 .segmented label:has(input:checked){
   background:#11182a; border-color:#2a3550;
 }

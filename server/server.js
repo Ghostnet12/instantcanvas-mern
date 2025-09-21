@@ -41,7 +41,7 @@ const submissionSchema = new mongoose.Schema({
 const Submission = mongoose.models.Submission || mongoose.model('Submission', submissionSchema);
 
 // Middleware
-app.use(helmet());
+app.use(helmet({ crossOriginResourcePolicy: false }));
 app.use(morgan('tiny'));
 app.use(express.json());
 

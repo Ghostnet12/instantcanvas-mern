@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>InstantCanvas — Design & Build Websites Fast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="InstantCanvas designs and codes blazing-fast, accessible websites. From idea to launch — in days, not months." />
+    <meta name="theme-color" content="#0e0f13" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-animate="fade">
+      <a class="brand" href="./index.html" aria-label="InstantCanvas home">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M8 12h48v8H8zM8 28h30v8H8zM8 44h40v8H8z"/>
+        </svg>
+        <span class="brand-text">InstantCanvas</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-bar"></span><span class="sr-only">Menu</span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="cta" href="#contact">Start a project</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" data-animate="rise">
+        <div class="hero-inner">
+          <h1>
+            Design studio meets <span class="accent">full-stack</span>.<br/>
+            Ship a polished website in <span class="accent">one week</span>.
+          </h1>
+          <p class="lede">
+            Strategy → UX/UI → production-grade code. You bring the idea, we deliver a fast, accessible site that converts.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get a quote</a>
+            <a href="#work" class="btn btn-ghost">See selected work</a>
+          </div>
+
+          <div class="hero-media">
+            <img
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop"
+              alt="Developer desk with code editor" width="1400" height="800" loading="eager" />
+            <div class="hero-stats">
+              <div><strong>~1 week</strong><span>typical timeline</span></div>
+              <div><strong>100</strong><span>Lighthouse perf target</span></div>
+              <div><strong>AA+</strong><span>accessibility baseline</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK -->
+      <section id="work" class="section section-tight" aria-labelledby="work-title" data-animate="fade">
+        <div class="section-head">
+          <h2 id="work-title">Selected Work</h2>
+          <p class="muted">Real projects that show the full stack—strategy, design, and clean code.</p>
+        </div>
+        <div class="grid work-grid">
+          <article class="card work">
+            <a href="./case-study.html" class="cover-link" aria-label="Read case study: LaunchPad">
+              <figure class="ratio ratio-16x9">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop"
+                     alt="Modern SaaS marketing website on laptop" loading="lazy"/>
+              </figure>
+            </a>
+            <div class="work-meta">
+              <h3>LaunchPad — SaaS Marketing</h3>
+              <p class="muted">Brand system + Next.js + headless CMS. <strong>Result:</strong> +38% sign-ups in 30 days.</p>
+              <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Headless CMS</li><li>Vercel</li></ul>
+            </div>
+          </article>
+
+          <article class="card work">
+            <figure class="ratio ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?q=80&w=1600&auto=format&fit=crop"
+                   alt="Ecommerce product grid" loading="lazy"/>
+            </figure>
+            <div class="work-meta">
+              <h3>Fable Goods — Ecommerce</h3>
+              <p class="muted">Conversion-focused storefront with Stripe checkout and accessible forms.</p>
+              <ul class="tags"><li>React</li><li>Stripe</li><li>Node</li><li>Webhooks</li></ul>
+            </div>
+          </article>
+
+          <article class="card work">
+            <figure class="ratio ratio-16x9">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop"
+                   alt="Clean analytics dashboard UI" loading="lazy"/>
+            </figure>
+            <div class="work-meta">
+              <h3>Northstar — Analytics Dashboard</h3>
+              <p class="muted">Modular components, secure API, and keyboard-first controls.</p>
+              <ul class="tags"><li>React</li><li>Express</li><li>REST</li><li>ARIA</li></ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SERVICES PRO -->
+      <section id="services" class="section" aria-labelledby="services-title" data-animate="rise">
+        <div class="section-head">
+          <h2 id="services-title">Services</h2>
+          <p class="muted">Choose a lane or go end-to-end. Every package ships design & code that performs.</p>
+        </div>
+
+        <div class="service-tabs" role="tablist" aria-label="Service categories">
+          <button class="tab is-active" role="tab" aria-selected="true" data-seg="all">All</button>
+          <button class="tab" role="tab" aria-selected="false" data-seg="design">Design</button>
+          <button class="tab" role="tab" aria-selected="false" data-seg="dev">Development</button>
+          <button class="tab" role="tab" aria-selected="false" data-seg="growth">Growth</button>
+        </div>
+
+        <div class="grid service-pro-grid" id="service-grid">
+          <!-- UX & Interface Design -->
+          <article class="card service-pro" data-seg="design">
+            <header class="service-head">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zM3 9h18"/></svg>
+              </div>
+              <div>
+                <h3>UX & Interface Design</h3>
+                <p class="muted">Wireframes → high-fi UI → design tokens</p>
+              </div>
+            </header>
+            <ul class="pill-list">
+              <li>Design system</li><li>Clickable prototype</li><li>WCAG AA+</li>
+            </ul>
+            <div class="service-meta">
+              <span class="micro muted">Typical: 3–5 days</span>
+              <span class="price-chip">from $2.5k</span>
+            </div>
+            <button class="btn btn-primary go-contact" data-type="Marketing site">Start brief</button>
+            <button class="btn btn-ghost service-more" aria-expanded="false" aria-controls="svc-design-details">What you get</button>
+            <div class="service-details" id="svc-design-details" hidden>
+              <ul class="list">
+                <li>Discovery workshop & success metrics</li>
+                <li>Responsive layouts & component library</li>
+                <li>Design tokens (color, type, radius, spacing)</li>
+                <li>Exported assets + handoff notes</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Full-Stack Development -->
+          <article class="card service-pro" data-seg="dev">
+            <header class="service-head">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+              </div>
+              <div>
+                <h3>Full-Stack Development</h3>
+                <p class="muted">Modern stack, clean architecture, tests</p>
+              </div>
+            </header>
+            <ul class="pill-list">
+              <li>Next/React</li><li>Node APIs</li><li>CI/CD</li>
+            </ul>
+            <div class="service-meta">
+              <span class="micro muted">Typical: 5–10 days</span>
+              <span class="price-chip">from $4.5k</span>
+            </div>
+            <button class="btn btn-primary go-contact" data-type="Web app / Dashboard">Start brief</button>
+            <button class="btn btn-ghost service-more" aria-expanded="false" aria-controls="svc-dev-details">What you get</button>
+            <div class="service-details" id="svc-dev-details" hidden>
+              <ul class="list">
+                <li>Componentized UI, routing & forms</li>
+                <li>CMS or admin (headless or custom)</li>
+                <li>Perf & a11y baselines (Lighthouse ≥ 95/AA+)</li>
+                <li>Deploy to Vercel/Netlify + environment setup</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Growth & Optimization -->
+          <article class="card service-pro" data-seg="growth">
+            <header class="service-head">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg>
+              </div>
+              <div>
+                <h3>Growth & Optimization</h3>
+                <p class="muted">SEO, experiments, analytics that matter</p>
+              </div>
+            </header>
+            <ul class="pill-list">
+              <li>Core Web Vitals</li><li>On-page SEO</li><li>A/B tests</li>
+            </ul>
+            <div class="service-meta">
+              <span class="micro muted">Typical: 3–7 days</span>
+              <span class="price-chip">from $1.8k</span>
+            </div>
+            <button class="btn btn-primary go-contact" data-type="Ecommerce">Start brief</button>
+            <button class="btn btn-ghost service-more" aria-expanded="false" aria-controls="svc-growth-details">What you get</button>
+            <div class="service-details" id="svc-growth-details" hidden>
+              <ul class="list">
+                <li>Technical SEO & sitemap/robots review</li>
+                <li>Speed budget + CWV remediation plan</li>
+                <li>Analytics events & dashboards</li>
+                <li>Experiment backlog + quick wins</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- End-to-End Launch -->
+          <article class="card service-pro featured" data-seg="design dev growth">
+            <div class="badge">Popular</div>
+            <header class="service-head">
+              <div class="icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 5h14v6H5zM5 13h10v6H5z"/></svg>
+              </div>
+              <div>
+                <h3>End-to-End Launch (One-Week)</h3>
+                <p class="muted">Strategy → Design → Build → Deploy</p>
+              </div>
+            </header>
+            <ul class="pill-list">
+              <li>Brand-fit UI</li><li>CMS</li><li>Deploy & tracking</li>
+            </ul>
+            <div class="service-meta">
+              <span class="micro muted">Typical: 5–8 days</span>
+              <span class="price-chip">from $6.8k</span>
+            </div>
+            <button class="btn btn-primary go-contact" data-type="Marketing site">Start this package</button>
+            <button class="btn btn-ghost service-more" aria-expanded="false" aria-controls="svc-e2e-details">What you get</button>
+            <div class="service-details" id="svc-e2e-details" hidden>
+              <ul class="list">
+                <li>Kickoff workshop & success metrics</li>
+                <li>Design system + high-fi pages</li>
+                <li>Production build, a11y pass, perf tuning</li>
+                <li>Deploy, DNS, analytics, handoff video</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section id="process" class="section section-tight" aria-labelledby="process-title" data-animate="fade">
+        <div class="section-head">
+          <h2 id="process-title">Process (fast, not rushed)</h2>
+          <p class="muted">A clear path from idea to live site.</p>
+        </div>
+        <ol class="steps">
+          <li><strong>Discover.</strong> Goals, audience, success metrics.</li>
+          <li><strong>Design.</strong> Wire → high-fi UI → tokens.</li>
+          <li><strong>Build.</strong> Components, pages, CMS, integrations.</li>
+          <li><strong>Polish.</strong> Performance, a11y, SEO, QA.</li>
+          <li><strong>Launch.</strong> CI/CD, domain, analytics, handoff.</li>
+        </ol>
+      </section>
+
+      <!-- PRICING -->
+      <section id="pricing" class="section" aria-labelledby="pricing-title" data-animate="rise">
+        <div class="section-head">
+          <h2 id="pricing-title">Pricing</h2>
+          <p class="muted">Transparent packages; custom scopes welcome.</p>
+        </div>
+        <div class="grid price-grid">
+          <article class="card price">
+            <h3>Starter</h3>
+            <p class="muted">One-page, launch-ready.</p>
+            <ul class="list"><li>Brand-fit UI</li><li>Static or CMS</li><li>Basic analytics</li></ul>
+            <p class="price-tag">$1,500+</p>
+            <a href="#contact" class="btn btn-secondary">Choose Starter</a>
+          </article>
+          <article class="card price featured" aria-label="Most popular">
+            <div class="badge">Popular</div>
+            <h3>Studio</h3>
+            <p class="muted">Multi-page site with CMS.</p>
+            <ul class="list"><li>Design system</li><li>CMS + editor training</li><li>Perf & a11y</li></ul>
+            <p class="price-tag">$4,500+</p>
+            <a href="#contact" class="btn btn-primary">Choose Studio</a>
+          </article>
+          <article class="card price">
+            <h3>Full Stack</h3>
+            <p class="muted">Custom features & integrations.</p>
+            <ul class="list"><li>Auth, payments, APIs</li><li>Ecommerce & dashboards</li><li>Experiments</li></ul>
+            <p class="price-tag">$8,500+</p>
+            <a href="#contact" class="btn btn-secondary">Choose Full Stack</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section section-tight" aria-labelledby="faq-title" data-animate="fade">
+        <div class="section-head">
+          <h2 id="faq-title">FAQ</h2>
+        </div>
+        <details class="faq"><summary>How fast can you ship?</summary><p>Most sites launch in 5–10 business days depending on scope and content readiness.</p></details>
+        <details class="faq"><summary>Do you handle content and images?</summary><p>Yes—copywriting, licensed imagery, and reusable libraries.</p></details>
+        <details class="faq"><summary>What about ongoing help?</summary><p>Flexible retainers for updates, experiments, and growth work.</p></details>
+      </section>
+
+      <!-- CONTACT 2.0 -->
+      <section id="contact" class="section contact" aria-labelledby="contact-title" data-animate="rise">
+        <div class="contact-wrap">
+          <!-- Left: pitch -->
+          <aside class="contact-aside card">
+            <h2 id="contact-title">Start a project</h2>
+            <p class="muted">Tell us your goals and constraints. We’ll reply with a plan, timeline, and quote.</p>
+            <ul class="contact-highlights">
+              <li><span>⏱️</span> Typical timeline: 5–10 business days</li>
+              <li><span>⚡</span> Performance target: Lighthouse 100</li>
+              <li><span>♿</span> Accessibility baseline: WCAG AA+</li>
+            </ul>
+            <div class="contact-badges">
+              <span class="badge">Design → Code</span>
+              <span class="badge">CMS-ready</span>
+              <span class="badge">Deploy included</span>
+            </div>
+            <p class="micro muted">Prefer email? <a href="mailto:hello@instantcanvas.io">hello@instantcanvas.io</a></p>
+          </aside>
+
+          <!-- Right: form -->
+          <form class="contact-card card" id="contact-form" novalidate>
+            <fieldset class="row-2">
+              <label class="field">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+                <small class="error" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+                <small class="error" aria-live="polite"></small>
+              </label>
+            </fieldset>
+
+            <fieldset class="row-2">
+              <label class="field">
+                <span>Company <em class="muted">(optional)</em></span>
+                <input type="text" name="company" autocomplete="organization" />
+                <small class="error" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>Project type</span>
+                <div class="segmented" role="radiogroup" aria-label="Project type">
+                  <label><input type="radio" name="type" value="Marketing site" required /> Marketing</label>
+                  <label><input type="radio" name="type" value="Ecommerce" /> Ecommerce</label>
+                  <label><input type="radio" name="type" value="Web app / Dashboard" /> Web app</label>
+                </div>
+                <small class="error" aria-live="polite"></small>
+              </label>
+            </fieldset>
+
+            <fieldset class="row-2">
+              <label class="field">
+                <span>Budget</span>
+                <select name="budget" required>
+                  <option value="" selected disabled>Select a range</option>
+                  <option value="1500-4500">$1.5k–$4.5k</option>
+                  <option value="4500-8500">$4.5k–$8.5k</option>
+                  <option value="8500+">$8.5k+</option>
+                </select>
+                <small class="error" aria-live="polite"></small>
+              </label>
+              <label class="field">
+                <span>Timeline</span>
+                <select name="timeline" required>
+                  <option value="" selected disabled>When do you want to launch?</option>
+                  <option value="1w">~1 week</option>
+                  <option value="2-3w">2–3 weeks</option>
+                  <option value="flex">Flexible</option>
+                </select>
+                <small class="error" aria-live="polite"></small>
+              </label>
+            </fieldset>
+
+            <label class="field">
+              <span>Project goals</span>
+              <textarea name="message" rows="6" placeholder="What are we building and why now?" required></textarea>
+              <small class="error" aria-live="polite"></small>
+            </label>
+
+            <label class="field">
+              <span>Links <em class="muted">(optional: brief URLs to refs, brand, copy)</em></span>
+              <input type="url" name="links" placeholder="https://…" inputmode="url" />
+              <small class="error" aria-live="polite"></small>
+            </label>
+
+            <label class="checkbox">
+              <input type="checkbox" name="consent" required />
+              <span>I’m OK receiving an email reply about this request.</span>
+            </label>
+            <small class="error" data-for="consent" aria-live="polite"></small>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Send request</button>
+              <p class="form-note muted">No spam. We usually reply within 24 hours.</p>
+            </div>
+
+            <!-- Success state -->
+            <div class="form-success" role="status" aria-live="polite" hidden>
+              <h3>Thanks — we got it!</h3>
+              <p class="muted">We’ll review and reply with a plan and quote. If you want to add anything, just email <a href="mailto:hello@instantcanvas.io">hello@instantcanvas.io</a>.</p>
+              <button class="btn btn-ghost" type="button" id="new-request">Send another</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> InstantCanvas. Crafted with care.</p>
+      <ul class="social">
+        <li><a href="#" aria-label="GitHub">GitHub</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:hello@instantcanvas.io">hello@instantcanvas.io</a></li>
+      </ul>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

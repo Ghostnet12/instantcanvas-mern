@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>InstantCanvas Blog — Ideas, Patterns, Benchmarks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Design patterns, performance tips, accessibility, and growth experiments." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./index.html">
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M8 12h48v8H8zM8 28h30v8H8zM8 44h40v8H8z"/>
+        </svg>
+        <span class="brand-text">InstantCanvas</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">
+          <span class="nav-toggle-bar"></span><span class="sr-only">Menu</span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="./index.html#work">Work</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#process">Process</a></li>
+          <li><a class="cta" href="./index.html#contact">Start a project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="section">
+      <div class="section-head">
+        <h1>Blog</h1>
+        <p class="muted">Readable, skimmable, SEO-friendly. Posts below are rendered from Markdown.</p>
+      </div>
+      <div id="post-list" class="grid posts"></div>
+    </main>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> InstantCanvas.</p>
+    </footer>
+    <script src="./script.js" defer></script>
+  </body>
+</html>

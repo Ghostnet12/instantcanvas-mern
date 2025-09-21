@@ -329,6 +329,19 @@
         smoothScrollTo(target);
         setTimeout(()=> prefillProjectType(t), 250);
       }
-    })();
+    })
+          // Fallback for browsers without :has() support: apply 'active' class
+const segmentedRadios = document.querySelectorAll('.segmented input[type="radio"]');
+segmentedRadios.forEach((radio) => {
+  radio.addEventListener('change', () => {
+    const seg = radio.closest('.segmented');
+    if (!seg) return;
+    seg.querySelectorAll('label').forEach((label) => label.classList.remove('active'));
+    if (radio.parentElement) radio.parentElement.classList.add('active');
+  });
+  // Apply initial active state
+  if (radio.checked && radio.parentElement) radio.parentElement.classList.add('active');
+});
+();
   })();
 })();
